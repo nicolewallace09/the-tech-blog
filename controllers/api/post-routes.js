@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Post, User, Comment} = require('../../models');
-const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
 
 // GET all posts
@@ -14,7 +13,7 @@ router.get('/', (req, res) => {
                    'created_at'
                 ],
       // show latest news first
-      order: [['created at', 'DESC']],
+      order: [['created_at', 'DESC']],
       // JOIN to the User table
       include: [
           // comment model -- attaches username to comment 
