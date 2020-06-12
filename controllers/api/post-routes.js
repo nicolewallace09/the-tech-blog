@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     Post.findAll({
       // Query configuration
       attributes: ['id', 
-                   'post_url',
+                   'post_text',
                    'title',
                    'created_at'
                 ],
@@ -97,7 +97,7 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
     Post.update({
         title: req.body.title,
-        post_text: req.body.post_text
+        // post_text: req.body.post_text
       },
       {
         where: {
