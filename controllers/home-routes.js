@@ -52,7 +52,12 @@ router.get('/login', (req, res) => {
 // rendering sign up page 
 router.get('/signup', (req, res) => {
     res.render('signup');
-  });
+});
+
+// rendering new post page 
+router.get('/newpost', (req, res) => {
+  res.render('new-posts');
+});
 
 //rendering one post to the single-post page
 router.get('/post/:id', (req, res) => {
