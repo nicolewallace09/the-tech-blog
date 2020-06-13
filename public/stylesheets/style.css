@@ -55,7 +55,7 @@ textarea, input {
 
 textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid var(--primary-hover);
 }
 
 textarea {
@@ -112,7 +112,7 @@ main {
 
 .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: var(--primary-hover);
 }
 
 .delete-post-btn {
