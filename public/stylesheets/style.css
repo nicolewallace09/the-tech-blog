@@ -45,6 +45,8 @@ a:hover {
 
 .create-btn {
     color:white;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .create-btn:hover {

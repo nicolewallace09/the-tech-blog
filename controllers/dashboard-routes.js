@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
+const sequelize = require('../config/connection');
 
 // dashboard displaying posts created by logged in users 
 router.get('/', withAuth, (req, res) => {
@@ -41,7 +42,7 @@ router.get('/', withAuth, (req, res) => {
       });
   });
 
-
+// rendering edit page
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
     where: {
@@ -77,6 +78,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
+// rendering newpost page 
 router.get('/newpost', (req, res) => {
   res.render('new-posts');
 });
