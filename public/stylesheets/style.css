@@ -1,5 +1,6 @@
 :root {
     --primary-color: #6F1E51;
+    --primary-hover: #B53471;
     --secondary-color: #FFC312; 
 }
 
@@ -23,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: #3486eb;
+    color: var(--primary-hover);
 }
 
 button {
@@ -38,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: #3486eb;
+    background-color: var(--primary-hover);
 }
 
 .post-list {
