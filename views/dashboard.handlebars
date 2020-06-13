@@ -3,18 +3,20 @@
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
-    <li>
+    <ul>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+    </ul>
     {{/each}}
   </ol>
 </section>
 {{/if}}
 
 <div>
-    <button type="submit">Create New Post</button>
+    <button type="submit"><a href="/dashboard/newpost" class="create-btn">Create New Post</a></button>
 </div>
+
+
 
 
 

@@ -36,6 +36,21 @@ a:hover {
     color: var(--primary-hover);
 }
 
+.blog-title {
+    color: var(--primary-hover);
+    font-size: 25px;
+    margin: 25px; 
+    padding: 10px; 
+}
+
+.create-btn {
+    color:white;
+}
+
+.create-btn:hover {
+    color:white;
+}
+
 button {
     background-color: var(--primary-color);
     border: 0;
@@ -48,7 +63,7 @@ button {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-button:hover {
+button:hover{
     background-color: var(--primary-hover);
 }
 
@@ -123,6 +138,14 @@ main {
 .btn-no-style:hover {
     background: none;
     color: var(--primary-hover);
+}
+
+.delete-post-btn {
+    background-color: #d41414;
+}
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
 }
 
 .post {
