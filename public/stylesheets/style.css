@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #6F1E51;
+    --secondary-color: #FFC312; 
+}
+
 * {
     box-sizing: border-box;
   }
@@ -12,7 +17,7 @@ body, html {
 
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: var(--primary-color);
     font-weight: bold;
     transition: color .1s;
 }
@@ -22,7 +27,7 @@ a:hover {
 }
 
 button {
-    background-color: #225ca3;
+    background-color: var(--primary-color);
     border: 0;
     padding: 1%;
     color: white;
@@ -97,7 +102,7 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: var(--primary-color);
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -110,11 +115,11 @@ main {
 }
 
 .delete-post-btn {
-    background-color: #d41414;
+    background-color: var(--secondary-color);
 }
 
 .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #F79F1F;
 }
 
 .post {
